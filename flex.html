@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-attachment: fixed;
+            background:linear-gradient(180deg,blue,black,white)
+        }
+        h1{
+            text-align: center;
+        }
+        .pic{
+            display: flex;
+            gap:20px;
+            width:1000px;
+            height: 550px;
+        }
+        .name{
+            display: flex;
+            gap:300px;
+            margin-left: 40px;
+        }
+        .about{
+            display: flex;
+            margin-left: 40px;
+            margin-top: -30px;
+            gap:60px;
+        }
+        .grid{
+            margin-top: 106px;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3,1fr);
+            border:5px;
+            border-radius: 20px;
+            height: 300px;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEX</h1>
+    <h3 style="text-align: center;">ANIMALS</h3>
+    <div class="pic">
+        <img src="./images/lion.avif">
+        <img src="./images/tiger.avif">
+        <img src="./images/deer.avif">
+        <img src="./images/wolf.avif">
+    </div>
+    <div class="name">
+        <h2>LION</h2>
+        <h2>TIGER</h2>
+        <h2>DEER</h2>
+        <h2>WOLF</h2>
+    </div>
+    <div class="about">
+        <p>Lions are large wild cats mainly found in parts<br> of India and Africa.<br> 
+            They usually live in groups called prides.<br>
+            Male lions are known for their thick manes.<br>
+            Lions are carnivores, meaning they eat meat.
+        </p>
+        <p>Tigers are the largest cat species in the world.<br>
+           They are famous for their orange fur with black stripes.<br>
+           Tigers usually live alone and are strong hunters.<br>
+           The Bengal Tiger is commonly found in India.
+        </p>
+        <p>
+            Deer are herbivores, so they eat grass,<br> leaves, and plants.<br>
+            Many male deer grow antlers.<br>
+            Deer are fast runners and are often prey<br> for larger predators.<br>
+            They are found in forests and grasslands<br> around the world.
+        </p>
+        <p>
+            Wolves are wild members of the dog family.<br>
+            They usually live and hunt in groups called packs.<br>
+            Wolves communicate using howls.<br>
+            They are intelligent hunters and mostly eat meat.
+        </p>
+    </div>
+           <h1>GRID</h1>
+    <div class="grid" style="margin-left: 242px;">
+        <div class="0ne">
+            <img src="./images/deer.avif" style="width: 135px;" height="125px">
+        </div>
+        <div class="two">
+            <img src="./images/tiger.avif" style="width: 135px;" height="125px">
+        </div>
+        <div class="three">
+            <img src="./images/panda.jpg"  style="width: 135px;" height="125px">
+        </div>
+        <div class="four">
+            <img src="./images/monkey.jpg"  style="width: 135px;" height="125px">
+        </div>
+        <div class="five">
+            <img src="./images/wolf.avif"  style="width: 135px;" height="125px">
+        </div>
+        <div class="six">
+            <img src="./images/lion.avif" style="width: 135px;" height="125px">
+        </div>
+    </div>
+</body>
+</html>
