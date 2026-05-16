@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {border: 2px solid #04AA6D;}
+.button2 {border: 2px solid #008CBA;}
+.button3 {border: 2px solid #f44336;}
+.button4 {border: 2px solid #db28a2;}
+.button5 {border: 2px solid #555555;}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4:hover {
+    background-color: violet;
+    color:white;
+}
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+h2{
+    text-shadow: 2px 2px red;
+}
+img{
+    border-radius: 1050px;
+}
+#example1 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(paper.gif);
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+
+#example2 {
+  border: 10px double black;
+  padding: 25px;
+  background: url(paper.gif);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+#example3 {
+  border: 10px solid black;
+  padding: 25px;
+  background: url(paper.gif);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.cursor1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.col-resize {cursor: col-resize;}
+.context-menu {cursor: context-menu;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+.trans{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s;
+}
+
+.trans:hover{
+  width: 300px;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+    <center>
+<h1> CSS STYLES</h1>
+</center>
+<h5>CSS BUTTON</h5>
+<p><strong>HOVER:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p>
+
+<button class="button button1">HOME</button>
+<button class="button button2">ABOUT</button>
+<button class="button button3">BLOG</button>
+<button class="button button4">SERVICE</button>
+<button class="button button5">CONTACT</button>
+<hr>
+ <center>
+    <h1>TEXT SHADOW EFFECT</h1>
+    <h2>HELLO WORLD!!!</h2><br>
+    <hr>
+  <h1>Circled Image</h1>
+<p>Use the border-radius property to create circled images:</p>
+<img src="./images/panda.jpg" alt="Paris" width="300" height="300">
+</center>
+<hr>
+
+<div id="example1">
+  <h1>Hello World</h1>
+  <p>The background image starts from the upper left corner of the padding edge.</p>
+</div><br><br>
+
+<div id="example2">
+  <h1>Hello World</h1>
+  <p>The background image starts from the upper left corner of the border.</p>
+</div><br><br>
+
+<div id="example3">
+  <h1>Hello World</h1>
+  <p>The background image starts from the upper left corner of the content.</p>
+</div>
+<div class="cursor" style="background-color: #555555; font-size:40px">
+
+<h1>The cursor Property</h1>
+<p>Mouse over the words to change the mouse cursor.</p>
+<div class="cursor1">
+
+<p class="alias">alias</p>
+<p class="all-scroll">all-scroll</p>
+<p class="auto">auto</p>
+<p class="cell">cell</p>
+<p class="col-resize">col-resize</p>
+<p class="context-menu">context-menu</p>
+<p class="copy">copy</p>
+<p class="crosshair">crosshair</p>
+<p class="default">default</p>
+<p class="e-resize">e-resize</p>
+<p class="ew-resize">ew-resize</p>
+<p class="grab">grab</p>
+<p class="grabbing">grabbing</p>
+<p class="help">help</p>
+<p class="move">move</p>
+<p class="n-resize">n-resize</p>
+<p class="ne-resize">ne-resize</p>
+<p class="nesw-resize">nesw-resize</p>
+<p class="ns-resize">ns-resize</p>
+<p class="nw-resize">nw-resize</p>
+<p class="nwse-resize">nwse-resize</p>
+<p class="no-drop">no-drop</p>
+<p class="none">none</p>
+<p class="not-allowed">not-allowed</p>
+<p class="pointer">pointer</p>
+<p class="progress">progress</p>
+<p class="row-resize">row-resize</p>
+<p class="s-resize">s-resize</p>
+<p class="se-resize">se-resize</p>
+<p class="sw-resize">sw-resize</p>
+<p class="text">text</p>
+<p class="url">url</p>
+<p class="w-resize">w-resize</p>
+<p class="wait">wait</p>
+<p class="zoom-in">zoom-in</p>
+<p class="zoom-out">zoom-out</p>
+</div>
+</div>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div class="trans" style="font-size: 40px;"> Transition</div>
+<hr>
+
+<h2>Dropdown Box with Text</h2>
+<p>Mouse over the text below to display the dropdown content.</p>
+
+<div class="dropdown">Mouse over me!
+  <div class="dropdown-content">Hello World!</div>
+</div>
+
+
+
+    
+</body>
+</html>
