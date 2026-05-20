@@ -4,6 +4,6 @@
     #print(count)
 
 password=""
-while != password:
-    password = "python"
-    print(Login successfully)
+while  password != "python":
+    password = input("enter you password")
+print("Login successfully")
