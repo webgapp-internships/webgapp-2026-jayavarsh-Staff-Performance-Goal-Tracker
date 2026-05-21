@@ -18,4 +18,3 @@ s3=student("Jeni",90)
 s1.show()
 s2.show()
 s3.show()
-
