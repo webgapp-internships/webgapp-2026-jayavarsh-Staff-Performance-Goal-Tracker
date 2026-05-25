@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login form</title>
+    <title>form</title>
     <style>
         form{
             background-color:gray;
-            width:300px;
-            align-items: center;
-            
+            width:350px;
+            align-items:center
         }
     </style>
 
 </head>
 <body>
-    <form>
-        <center>
-        <h1 style="color: bisque;">LOGIN <span style="color: blue;">FORM</span></h1>
-        <label>email:</label>
-        <input type="email" name="email" required><br><br>
-        <label>Password :</label>
-        <input type="password" name="password" required><br><br>
+ <center>
+        <h1>REGISTRATION FORM</h1>
+    <form id="form" method="POST">
+        <label>NAME :</label>
+        <input type="text" id="fname" name="name" ><br><br>
+        <label>AGE:</label>
+        <input type="number" name="age" id="age" ><br><br>
+        <label>DATE OF BIRTH:</label>
+        <input type="date" name="dob" id="dob" ><br><br>
 
-        <input type="submit" value="LOGIN">
-        <input type="reset" value="Reset">
-        </center>
+        <input type="submit" value="SUBMIT">
 
 
     </form>
+</center>
     
 </body>
 </html>
